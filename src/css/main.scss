@@ -1,0 +1,44 @@
+.inputRow {
+  border: 0;
+}
+
+input[type=checkbox] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+label {
+  display: inline-block;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.button-delete::before {
+  content: url("../img/icons/delete-icon.svg");
+  vertical-align: middle;
+  position: relative;
+}
+
+.button-delete {
+  background-color: unset;
+  border: none;
+}
+
+.label {
+  color: var(--color-primary);
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.to-do-list {
+  max-width: 420px;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  color: var(--color-secondary);
+}
